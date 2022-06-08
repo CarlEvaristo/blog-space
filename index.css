@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62,5%;
+    color: #000;
+    line-height: 1.6;
+    letter-spacing:0.2px;
+}
+h1 {
+    position:relative;
+    margin:0.8em 0;
+    color: #fff;
+    letter-spacing:3px;
+    font-size: 2.5rem;
+}
+nav {
+    background: linear-gradient(to right,#FC466B,#3F5EFB );
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.326);
+    position:fixed;
+    top:0;
+    width:100%;
+}
+main{
+    padding-top: 9em;
+}
+.container {
+    max-width: 70vw;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+}
+
+@media (min-width:700px) {
+    .container { 
+        max-width: 55vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 40vw;
+    }
+}
+
