@@ -34,7 +34,7 @@ nav i {
 #menu {
     background:rgba(186, 186, 186, 0.579);
     position:fixed;
-    z-index: 50;
+    z-index: 10;
     top:0;
     bottom:0;
     left:0;
@@ -42,14 +42,14 @@ nav i {
 }
 .display-none {
     display:none;
-    transition: display 500ms;
 }
 #menu ul {
+    border-radius:4px;
     width: 30vw;
     background:rgb(255, 255, 255);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.449);
     position:fixed;
-    z-index: 100;
+    z-index: 10000;
     top:3rem;
     right:15vw;
     padding:1.5em;
@@ -58,8 +58,11 @@ nav i {
     line-height: 1.5;
     font-weight: normal;
     list-style: none;
+    cursor: pointer;
 }
-
+#menu li a  {
+    text-decoration:none;
+}
 main{
     padding-top: 7em;
 }
