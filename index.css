@@ -32,6 +32,7 @@ main{
 }
 
 #inputForm  {
+    box-sizing: border-box;
     background:rgb(221, 220, 220);
     padding:1em;
     width:100%;
