@@ -31,6 +31,42 @@ main{
     flex-direction:column;
 }
 
+#inputForm  {
+    background:rgb(221, 220, 220);
+    padding:1em;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color:inherit;
+    border-radius:4px;
+}
+#inputForm > *  {
+    margin-bottom: 0.7em;
+    font-family:inherit;
+    font-size:inherit;
+}
+#inputForm input, #inputForm textarea  {
+    width: 100%;
+    border: none;
+    line-height: 1.8;
+}
+#inputForm button {
+    background-color:#FC466B;
+    color:#fff;
+    cursor:pointer;
+    border: none;
+    border-radius:4px;
+    margin: 1em 0;
+    padding: 0.5em 2em;
+}
+#inputForm button:hover {
+    background-color: #fff;
+    color:#000;
+}
+
+
 @media (min-width:700px) {
     .container { 
         max-width: 55vw;

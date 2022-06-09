@@ -1,13 +1,14 @@
-/**
- Challenge:
 
- Style it up!
- 
- * Add a short (~30px height) fixed navbar at the top with the text "BlogSpace". Remember to pad the top of your content so it doesn't get hidden behind the navbar.
- * Add a font from Google Fonts.
- * Any other styling you want to make it look nice!
- 
- */
+document.getElementById("inputForm").addEventListener("submit", event => {
+    event.preventDefault()
+    let formData = new FormData(event.target)
+    let formObj = {
+        title: formData.get("title"),
+        body: formData.get("body")
+    }
+    console.log(formObj)
+})
+
 
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     .then(res => res.json())
