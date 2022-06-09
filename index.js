@@ -1,3 +1,10 @@
+document.querySelector(".fa-solid").addEventListener("click", () => {
+    document.getElementById("menu").classList.toggle("display-none")
+})
+document.getElementById("menu").addEventListener("click", () => {
+    document.getElementById("menu").classList.toggle("display-none")
+})
+
 
 document.getElementById("inputForm").addEventListener("submit", event => {
     event.preventDefault()
