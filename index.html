@@ -9,8 +9,8 @@
         <title>Blog Space</title>
     </head>
     <body>
-        <div id="menu" class="display-none">
-            <ul>
+        <div id="overlay" class="overlay-display-none">
+            <ul id="menu">
                 <li><a href="http://www.google.com" target="_blank">Google</a></li>
                 <hr />
                 <li><a href="#">menu item</a></li>
@@ -34,7 +34,7 @@
                     <input id="title" name="title" type="text" placeholder="Title" required>
                     <label for="body">Body: </label>
                     <textarea id="body" name="body" form="inputForm" placeholder="Enter text here..." required></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit">Submit Post</button>
                 </form>
                 <div id="blog-list"></div>
             </div>  

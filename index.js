@@ -25,11 +25,13 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 
 
 document.querySelector(".fa-solid").addEventListener("click", () => {
-    document.getElementById("menu").classList.toggle("display-none")
+    document.getElementById("overlay").classList.toggle("overlay-display-none")
+    document.getElementById("menu").classList.toggle("menu-open")
 })
-document.getElementById("menu").addEventListener("click", (event) => {
-    if (event.target.id === "menu") {
-        document.getElementById("menu").classList.toggle("display-none")
+document.getElementById("overlay").addEventListener("click", event => {
+    if (event.target.id === "overlay") {
+        document.getElementById("menu").classList.toggle("menu-open")
+        document.getElementById("overlay").classList.toggle("overlay-display-none")
     }
     
 })
